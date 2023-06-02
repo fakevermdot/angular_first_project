@@ -1,0 +1,11 @@
+<div class="login-popup">
+    <h2>Login</h2>
+    <form>
+      <input type="text" name="uname" placeholder="Username" [(ngModel)] = "username">
+      <input type="password" name="pword" placeholder="Password" [(ngModel)]="password">
+      <div class="btn-container">
+        <div class="error">{{errorMsg}}</div>
+      <button class="btn" type="submit" (click)="login()">Login</button>
+      </div>
+    </form>
+  </div>
